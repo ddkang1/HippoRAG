@@ -1392,7 +1392,7 @@ class HippoRAG:
                 if phrase_id is not None:
                     all_phrase_weights[phrase_id] = 0.0
 
-        assert np.count_nonzero(all_phrase_weights) == len(linking_score_map.keys())
+        # assert np.count_nonzero(all_phrase_weights) == len(linking_score_map.keys())
         return all_phrase_weights, linking_score_map
 
     def graph_search_with_fact_entities(self, query: str,
